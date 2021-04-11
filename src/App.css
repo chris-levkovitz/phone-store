@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+:root{
+  --mainBlue: #2a2a72;
+  --main: #009ffd;
+  --mainWhite: #f3f3f3;
+  --mainnDark: #232528;
+  --mainYellow: #ffa400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Bangers', cursive!important;
+  background: var(--mainWhite)!important;
+  color: var(--mainDark)!important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text-title {
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.text-blue {
+  color: var(--mainBlue);
 }
 
-.App-link {
-  color: #61dafb;
+.text-bright {
+  color: var(--mainBlue);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-black{
+  background-color: transparent;
+  text-transform: capitalize;
+  font-size: 1.5rem !important;
+  color: black;
+  border-radius: 0 !important;
+  border: 2px solid black !important;
+  padding: 2px 15px !important;
+}
+
+.btn-black:hover{
+  background: var(--mainYellow) !important;
+  color: var(--mainWhite) !important;
+}
+
+.cart-icon {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--mainYellow);
 }
